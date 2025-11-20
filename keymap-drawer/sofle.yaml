@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  default:
-  - {t: DELETE, h: adjust}
+  topLayer:
+  - {t: DELETE, h: BACKSPACE}
   - F1
   - F2
   - F3
@@ -13,7 +13,7 @@ layers:
   - F9
   - F10
   - PRINTSCREEN
-  - {t: Ctl+V, h: adjust}
+  - {t: AC PASTE, h: INS}
   - Q
   - D
   - R
@@ -24,26 +24,26 @@ layers:
   - U
   - P
   - ''''
-  - {t: Ctl+S, h: adjust}
-  - {t: Ctl+C, h: adjust}
-  - {t: A, h: adjust}
-  - {t: S, h: adjust}
-  - {t: H, h: adjust}
-  - {t: T, h: adjust}
-  - {t: G, h: adjust}
+  - {t: Ctl+S, h: Ctl+Sft+S}
+  - {t: AC COPY, h: AC CUT}
+  - {t: A, h: RALT}
+  - {t: S, h: LALT}
+  - {t: H, h: LCTRL}
+  - {t: T, h: LSHIFT}
+  - {t: G, h: Ctl+LSHFT}
   - Y
-  - {t: N, h: adjust}
-  - {t: E, h: adjust}
-  - {t: O, h: adjust}
-  - {t: I, h: adjust}
-  - Ctl+F
-  - Ctl+Z
+  - {t: N, h: RSHIFT}
+  - {t: E, h: RCTRL}
+  - {t: O, h: LALT}
+  - {t: I, h: RALT}
+  - {t: AC FIND, h: Ctl+CAPS}
+  - AC UNDO
   - Z
   - X
   - M
   - C
   - V
-  - {t: lower, h: toggle}
+  - {t: functionLayerL, h: toggle}
   - MUTE
   - K
   - L
@@ -51,17 +51,17 @@ layers:
   - .
   - /
   - Ctl+Y
-  - {t: HOME, h: adjust}
-  - {t: END, h: adjust}
-  - {t: ESC, h: adjust}
-  - {t: SPACE, h: adjust}
-  - {t: TAB, h: adjust}
-  - {t: KP ENTER, h: adjust}
-  - {t: BACKSPACE, h: adjust}
-  - {t: DEL, h: adjust}
-  - {t: PG UP, h: adjust}
-  - {t: PG DN, h: adjust}
-  lower:
+  - HOME
+  - END
+  - ESC
+  - SPACE
+  - TAB
+  - ENTER
+  - BACKSPACE
+  - DELETE
+  - {t: PAGE UP, h: Sft+Ctl+LALT}
+  - {t: PAGE DOWN, h: RGUI}
+  functionLayerL:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -104,7 +104,7 @@ layers:
   - F2
   - F3
   - PAUSE BREAK
-  - {t: raise, h: toggle}
+  - {t: navigationLayerR, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -122,7 +122,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  raise:
+  navigationLayerR:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -165,7 +165,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: adjust, h: toggle}
+  - {t: altGrLayer, h: toggle}
   - {t: ▽, type: trans}
   - INSERT
   - HOME
@@ -183,67 +183,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  adjust:
-  - {t: BACKSPACE, type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - W
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - INSERT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Ctl+Sft+S
-  - CUT
-  - RALT
-  - LALT
-  - RCTRL
-  - RSHIFT
-  - Ctl+RSHIFT
-  - ''
-  - LSHIFT
-  - LCTRL
-  - LALT
-  - RALT
-  - CAPSLOCK
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: altGrLayer, h: toggle}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - KP NUM
-  - Ctl+Sft+RALT
-  - {t: mouseLayer, h: toggle}
-  - {t: raise, h: toggle}
-  - RCTRL
-  - {t: symbolLayer, h: toggle}
-  - {t: numberLayer, h: toggle}
-  - {t: lower, h: toggle}
-  - Ctl+Sft+LALT
-  - RGUI
   altGrLayer:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -287,7 +226,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: symbolLayer, h: toggle}
+  - {t: symbolLayerL, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -305,7 +244,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  symbolLayer:
+  symbolLayerL:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -348,7 +287,7 @@ layers:
   - '@'
   - '#'
   - '|'
-  - {t: numberLayer, h: toggle}
+  - {t: numberLayerL, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -366,7 +305,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  numberLayer:
+  numberLayerL:
   - {t: ▽, type: trans}
   - F1
   - F2
@@ -381,9 +320,9 @@ layers:
   - F11
   - KP MULTIPLY
   - '{'
-  - {t: KP 7, h: symbolLayer}
-  - {t: KP 8, h: symbolLayer}
-  - {t: KP 9, h: symbolLayer}
+  - {t: KP 7, h: symbolLayerL}
+  - {t: KP 8, h: symbolLayerL}
+  - {t: KP 9, h: symbolLayerL}
   - '}'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -392,10 +331,10 @@ layers:
   - {t: ▽, type: trans}
   - F12
   - KP DIVIDE
-  - {t: ;, h: symbolLayer}
-  - {t: KP 4, h: symbolLayer}
-  - {t: KP 5, h: symbolLayer}
-  - {t: KP 6, h: symbolLayer}
+  - {t: ;, h: symbolLayerL}
+  - {t: KP 4, h: symbolLayerL}
+  - {t: KP 5, h: symbolLayerL}
+  - {t: KP 6, h: symbolLayerL}
   - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -404,12 +343,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '`', h: symbolLayer}
-  - {t: KP 1, h: symbolLayer}
-  - {t: KP 2, h: symbolLayer}
-  - {t: KP 3, h: symbolLayer}
+  - {t: '`', h: symbolLayerL}
+  - {t: KP 1, h: symbolLayerL}
+  - {t: KP 2, h: symbolLayerL}
+  - {t: KP 3, h: symbolLayerL}
   - \
-  - {t: mouseLayer, h: toggle}
+  - {t: mouseLayerR, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -427,7 +366,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  mouseLayer:
+  mouseLayerR:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -470,7 +409,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: settingLayer, h: toggle}
+  - {t: settingLayerL, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&msc SCRL_LEFT'
@@ -488,7 +427,7 @@ layers:
   - '&mkp MCLK'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  settingLayer:
+  settingLayerL:
   - '&bl BL_TOG'
   - {t: ▽, type: trans}
   - RGB TOG
@@ -531,7 +470,7 @@ layers:
   - RGB BRD
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: default, h: toggle}
+  - {t: topLayer, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
