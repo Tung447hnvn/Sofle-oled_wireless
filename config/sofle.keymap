@@ -86,11 +86,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&mt BACKSPACE DELETE    &kp F1      &kp F2      &kp F3       &kp F4        &kp F5                                  &kp F6         &kp F7        &kp F8                    &kp F9              &kp F10     &kp PRINTSCREEN
-&mt INS C_AC_PASTE      &kp Q       &kp D       &kp R        &kp W         &kp B                                   &kp J          &kp F         &kp U                     &kp P               &kp SQT     &mt LC(LS(S)) LC(S)
-&mt C_AC_CUT C_AC_COPY  &mt RALT A  &mt LALT S  &mt LCTRL H  &mt LSHIFT T  &mt LC(LSHFT) G                         &kp Y          &mt RSHIFT N  &mt RCTRL E               &mt LALT O          &mt RALT I  &mt LC(CAPS) C_AC_FIND
-&kp C_AC_UNDO           &kp Z       &kp X       &kp M        &kp C         &kp V            &to 1      &kp C_MUTE  &kp K          &kp L         &kp COMMA                 &kp DOT             &kp SLASH   &kp LC(Y)
-                                    &kp HOME    &kp END      &kp ESC       &kp SPACE        &kp TAB    &kp ENTER   &kp BACKSPACE  &kp DELETE    &mt LS(LC(LALT)) PAGE_UP  &mt RGUI PAGE_DOWN
+&mt BACKSPACE DELETE  &kp F1      &kp F2      &kp F3       &kp F4        &kp F5                                  &kp F6         &kp F7        &kp F8                    &kp F9              &kp F10     &kp PRINTSCREEN
+&mt INS LC(V)         &kp Q       &kp D       &kp R        &kp W         &kp B                                   &kp J          &kp F         &kp U                     &kp P               &kp SQT     &mt LC(LS(S)) LC(S)
+&mt LC(X) LC(C)       &mt RALT A  &mt LALT S  &mt LCTRL H  &mt LSHIFT T  &mt LC(LSHFT) G                         &kp Y          &mt RSHIFT N  &mt RCTRL E               &mt LALT O          &mt RALT I  &mt CAPS LC(F)
+&kp LC(Z)             &kp Z       &kp X       &kp M        &kp C         &kp V            &to 1      &kp C_MUTE  &kp K          &kp L         &kp COMMA                 &kp DOT             &kp SLASH   &kp LC(Y)
+                                  &kp HOME    &kp END      &kp ESC       &kp SPACE        &kp TAB    &kp ENTER   &kp BACKSPACE  &kp DELETE    &mt LS(LC(LALT)) PAGE_UP  &mt RGUI PAGE_DOWN
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>, <&inc_dec_kp UP DOWN>;
@@ -112,7 +112,7 @@
 &kp C_VOL_UP  &kp F12  &kp F7  &kp F8  &kp F9      &kp PRINTSCREEN                    &trans  &trans  &trans  &trans  &trans  &trans
 &kp C_VOL_DN  &kp F11  &kp F4  &kp F5  &kp F6      &kp SCROLLLOCK                     &trans  &trans  &trans  &trans  &trans  &trans
 &kp C_MUTE    &kp F10  &kp F1  &kp F2  &kp F3      &kp PAUSE_BREAK  &to 2     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                       &trans  &trans  &kp K_MENU  &trans           &trans    &trans  &trans  &trans  &trans  &trans
+                       &trans  &trans  &kp C_MENU  &trans           &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_PLAY C_STOP>, <&inc_dec_kp 0 0>;
