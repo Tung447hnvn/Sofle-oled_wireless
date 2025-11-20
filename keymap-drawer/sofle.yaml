@@ -13,7 +13,7 @@ layers:
   - F9
   - F10
   - PRINTSCREEN
-  - {t: AC PASTE, h: INS}
+  - {t: Ctl+V, h: INS}
   - Q
   - D
   - R
@@ -25,7 +25,7 @@ layers:
   - P
   - ''''
   - {t: Ctl+S, h: Ctl+Sft+S}
-  - {t: AC COPY, h: AC CUT}
+  - {t: Ctl+C, h: Ctl+X}
   - {t: A, h: RALT}
   - {t: S, h: LALT}
   - {t: H, h: LCTRL}
@@ -36,8 +36,8 @@ layers:
   - {t: E, h: RCTRL}
   - {t: O, h: LALT}
   - {t: I, h: RALT}
-  - {t: AC FIND, h: Ctl+CAPS}
-  - AC UNDO
+  - {t: Ctl+F, h: CAPS}
+  - Ctl+Z
   - Z
   - X
   - M
