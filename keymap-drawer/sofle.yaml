@@ -51,8 +51,8 @@ layers:
   - .
   - /
   - RIGHT SHIFT
-  - HOME
-  - END
+  - LWIN
+  - LALT
   - DELETE
   - ENTER
   - SPACE
